@@ -1,0 +1,174 @@
+// Predefined --Start
+
+.my__1 {
+  margin: 20px 0;
+}
+.p__1 {
+  padding: 20px;
+}
+
+.color__primary {
+  color: #ffffff;
+}
+.color__secondary {
+  color: #191c1b;
+}
+
+// Predefined --End
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  width: 800px;
+  height: 550px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 1px 15px 20px rgba(0, 0, 0, 0.9);
+  text-align: center;
+
+  h3 {
+    font: 500 16px/28px "Roboto", "Helvetica Neue", sans-serif;
+  }
+}
+
+.currency__converter {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, #dd5f2e, #eb5b79);
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+
+  .currency {
+    display: flex;
+    align-items: center;
+    height: 90%;
+
+    form {
+      flex: 1;
+
+      .convert__button {
+        width: 100%;
+        background-color: crimson;
+      }
+    }
+  }
+}
+
+.currency__result {
+  width: 50%;
+  height: 100%;
+  background-color: #191c1b;
+  color: white;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
+  word-wrap: break-word;
+}
+
+.result__container {
+  display: flex;
+  align-items: center;
+  height: 90%;
+  justify-content: space-around;
+
+  text-align: center;
+}
+
+.result__body {
+  width: 100%;
+}
+.result__body h3 {
+  font-size: 2.5rem;
+  font-family: "Roboto";
+  padding: 5px;
+}
+.result__body p {
+  font-weight: 300;
+  color: darkgray;
+}
+
+.bx-xl {
+  font-size: 6rem;
+  padding: 10px;
+  background-color: coral;
+  border-radius: 50%;
+  color: white;
+}
+
+.result__from h3 {
+  color: #e05d39;
+}
+
+.result__to h3 {
+  color: #eb5b79;
+}
+
+/*  Material Angular Styles  */
+
+.form__field {
+  background-color: white;
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.form__field .form__label {
+  color: #191c1b;
+  font-size: 1rem;
+}
+
+/* Media Query */
+
+// Small devices (landscape phones, Max 576px )
+@media (max-width: 575.98px) {
+  .section {
+    height: 100%;
+  }
+
+  .main {
+    display: block;
+    width: 95%;
+    height: fit-content;
+
+    .currency__converter {
+      // display: block;
+      width: 100%;
+      height: 50%;
+      border-radius: 10px 10px 0 0;
+      font-size: 2rem;
+
+      .currency {
+        display: inline-block;
+        width: 100%;
+      }
+
+      .convert__button {
+        color: white;
+        width: 100%;
+        background-color: crimson;
+      }
+    }
+
+    .currency__result {
+      width: 100%;
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+}
